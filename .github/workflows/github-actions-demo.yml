@@ -2,15 +2,12 @@ name: GitHub Actions Demo
 
 on: 
    push:
-    branches:
-      - main
-    paths-ignore:
-      - '.github/**'
-  pull_request:
-    branches:
-      - main
+    branches: [main]
+    paths-ignore: [.github/**]
+   pull_request:
+    branches: [main]
 
-  schedule:
+   schedule:
     - cron: '15 6 * * 0'
 
 jobs:
